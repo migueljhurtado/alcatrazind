@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&family=Berkshire+Swash&family=BhuTuka+Expanded+One&family=Cinzel:wght@500&family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&family=Berkshire+Swash&family=BhuTuka+Expanded+One&family=Racing+Sans+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+  /* TITULO Y MENU DE NAVEGACION */
+header {
+  grid-area: encabezado;
+  margin: 10px;
+  padding: 15px;
+  grid-area: r;
+}
+.flex-encabezado {
+  background-color: white;
+}
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1px;
+}
+header {
+  grid-area: solo;
+}
+h1 {
+  font-size: 60px;
+  font-family: "Cinzel", serif;
+  border: 5px rgba(122, 122, 122, 0.537) solid;
+  padding: 15px;
+}
+nav {
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+  border: 5px rgba(148, 148, 148, 0.333) solid;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+.men a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: "Amaranth", sans-serif;
+  margin: 60px;
+  background-color: black;
+}
+
+.men a:hover {
+  background-color: rgb(186, 186, 186);
+  padding: 8px;
+  transition: all 0.8s;
+  border-radius: 2px;
+}
+.boton {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  font-family: "Amaranth", sans-serif;
+}
+/* CONTENIDO PRINCIPAL */
+main {
+  border: 2px solid rgb(223, 223, 223);
+  background-color: rgb(223, 223, 223);
+  font-family: "Amaranth", sans-serif;
+  border-radius: 4px;
+  grid-area: contenido;
+}
+.im1{
+  grid-area: izq;
+}
+im2{
+  grid-area: der;
+}
+
+.contenido {
+  margin: 10px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-areas:
+    "section section section section"
+    "section section section section";
+}
+section .im {
+  height: 450px;
+  width: 310px;
+  grid-area: section;
+  padding: 8px;
+  margin-left: 30px;
+  border-top: rgba(128, 128, 128, 0.334) solid 3px;
+}
+section .im:hover {
+  height: 470px;
+  width: 340px;
+  transition: all 1s;
+  opacity: 74%;
+  /* FOOTER */
+}
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  grid-area: footer;
+}
+footer p {
+  color: white;
+  margin: 40px;
+  font-size: 17px;
+  font-family: "Cinzel", serif;
+}
+footer section img {
+  width: 80px;
+  height: 80px;
+  margin: 7px;
+}
+footer section img:hover {
+  width: 90px;
+  height: 90px;
+  transition: all 1s;
+  /* CONTENIDO HOMBRE MUJER Y PROMOCIONES */
+}
+.contenido2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 40px;
+}
+.contenido2 div {
+  padding: 17px;
+}
+.contenido2 div img {
+  border: 3px solid rgba(50, 50, 50, 0.373);
+  border-radius: 4px;
+  height: 550px;
+  width: 380px;
+}
+.contenido2 div img:hover {
+  height: 565px;
+  width: 395px;
+  transition: all 1s;
+}
+.item .btn {
+  width: 100px;
+  height: 20px;
+}
+
+.video {
+  border: 5px rgba(128, 128, 128, 0.299) solid;
+}
+/* FORMULARIO DE CONTACTO */
+.contacto {
+  display: grid;
+  margin-bottom: 45px;
+  grid-template-areas:
+    "formulario mapaub"
+    "formulario  mapaub";
+}
+form {
+  height: 200px;
+  width: 400px;
+  border: 8px solid rgba(142, 142, 142, 0.637);
+  grid-area: formulario;
+  margin-left: 200px;
+  margin-top: 130px;
+}
+.linea {
+  text-align: left;
+  padding: 15px;
+}
+
+.mapa {
+  grid-area: mapaub;
+  text-align: center;
+ 
+}
+
+
+@media (max-width:560px) {
+  .men a {
+    margin: 5px;
+    padding: 0px;
+    font-size: 7px;
+    
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer p{
+    font-size: 15px;
+  }
+  .flex-encabezado {
+    display: grid;
+    grid-template-areas:
+      " solo solo"
+      "navegacion navegacion navegacion"
+      "formulario"
+      "footer ";
+  }
+  h1 {
+    font-size: 25px;
+  }
+
+  form {
+    margin: 2px;
+    width: 350px;
+  }
+  .boton {
+    display: none;
+  }
+  .contacto .mapa {
+    display: none;
+  }
+  .video {
+    display: none;
+  }
+  .contenido img {
+    text-align: center;
+    width: 290px;
+  }
+}
