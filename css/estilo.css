@@ -228,4 +228,10 @@ form {
     text-align: center;
     width: 290px;
   }
+  .contenido2 div img:hover {
+    display: none;
+  }
+  section .im:hover{
+    display: none;
+  }
 }
