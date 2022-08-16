@@ -9,10 +9,10 @@ header {
   grid-area: encabezado;
   margin: 10px;
   padding: 15px;
-  grid-area: r;
+  
 }
 .flex-encabezado {
-  background-color: white;
+  background-color: rgba(182, 182, 182, 0.532);
 }
 .titulo {
   display: flex;
