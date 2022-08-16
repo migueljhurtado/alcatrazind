@@ -234,4 +234,8 @@ form {
   section .im:hover{
     display: none;
   }
+  .contenido2 section div img{
+    height: 430px;
+    width:300px;
+  }
 }
