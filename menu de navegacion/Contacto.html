@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/estilo.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="shortcut icon"
       href="../Wireframes/A favicon.png"
@@ -15,7 +16,7 @@
   <header class="flex-encabezado">
     <!-- NOMBRE DE LA PAGINA  -->
     <div class="titulo">
-      <h1>A L C A T R A Z </h1>
+      <h1 data-aos="fade-down">A L C A T R A Z </h1>
     </div>
     <!-- <div class="boton">
       <button class="boton1">Buscar</button>
@@ -25,7 +26,7 @@
       id="Buscar en la tienda "
     />
     </div> -->
-      <nav >
+      <nav data-aos="fade-right" >
         <ul class="navLinks">
           <li class="men"><a href="../index.html">I N I C I O</a></li>
           <li class="men" ><a href="Hombre.html">H O M B R E</a></li>
@@ -36,7 +37,7 @@
       </nav>
     </header>
     <main class="contacto">
-      <form >
+      <form data-aos="zoom-in" >
         <div class="linea">
           <label class="label" for="Nombre">Nombre</label>
           <input class="barra" type="text" placeholder="Nombre" id="Nombre" />
@@ -90,5 +91,9 @@
       <p>Alcatrazind@gmail.com</p>
       <p >Todos los derechos reservados</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

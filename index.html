@@ -7,12 +7,13 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" href="Wireframes/A favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <body>
     
     <header class="flex-encabezado">
       <!-- NOMBRE DE LA PAGINA  -->
       <div class="titulo">
-        <h1>A L C A T R A Z </h1>
+        <h1 data-aos="fade-down">A L C A T R A Z </h1>
       </div>
       <!-- <div class="boton">
         <button>Buscar</button>
@@ -22,7 +23,7 @@
         id="Buscar en la tienda "
       />
       </div> -->
-        <nav >
+        <nav data-aos="fade-right" >
           <ul class="navLinks">
             <li class="men" ><a href="index.html">I N I C I O</a></li>
             <li class="men" ><a href="menu de navegacion/Hombre.html">H O M B R E</a></li>
@@ -74,5 +75,9 @@
       <p>Alcatrazind@gmail.com</p>
       <p >Todos los derechos reservados</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
